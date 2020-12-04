@@ -11,12 +11,14 @@ public class user_interaction {
   private boolean valid = false; // stores if last input was valid
 
   // input method is a void method that varifies an entered String
-  // and saves it to usr_in
-  public void input(String input, int qualifications) {
+  // and saves it to usr_in. For qualifications, use 100 for default
+  public void input(int qualifications) {
+    Scanner input = new Scanner(System.in)
+    String user_input = input.nextLine();
     while(valid == false) {
-      if (valid_in(input, qualifications) == true) {
+      if (valid_in(user_input, qualifications) == true) {
         valid = true;
-        usr_in = input;
+        usr_in = user_input;
       } else {
         System.out.println("invalid input! Please try again.")
         valid = false;
@@ -24,20 +26,24 @@ public class user_interaction {
     }
   }
 
-  // valid_in boolean method returns true if input meets
+  // valid_in private boolean method returns true if input meets
   // certain qualifications
-  public boolean valid_in(String input, int qualifications) {
+  private boolean valid_in(String in, int qual) {
     // qualifications is represented by an integer that switches
     // between different scalable checks on proper input
-    switch(qualifications) {
+    switch(qual) {
       case 0:
-        // case 0 is for
+        // case 0 is
+        break;
       default:
         // default is basic checks for simple y/n statements
-        if ((input.toLowerCase() == y) || (input.toLowerCase() == n)) {
+        if ((in.toLowerCase() == "y") || (in.toLowerCase() == "n")) {
           return true;
+          break;
         }
     }
     return false; // returns false if not valid
   }
+
+
 }
