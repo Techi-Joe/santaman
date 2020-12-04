@@ -9,8 +9,7 @@ public class user_interaction {
   // note: all private vars are abbreviated
   private String usr_in; // var for storing user text input
 
-  // full constructor method
-  public user_interaction()
-
-  //
+  // input method is a void method that varifies an entered String
+  // and saves it to usr_in
+  
 }
