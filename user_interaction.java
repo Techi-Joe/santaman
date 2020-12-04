@@ -13,12 +13,14 @@ public class user_interaction {
   // input method is a void method that varifies an entered String
   // and saves it to usr_in
   public void input(String input, int qualifications) {
-    if (valid_in(input, qualifications) == true) {
-      valid = true;
-      usr_in = input;
-    } else {
-      System.out.println("invalid input! Please try again.")
-      valid = false;
+    while(valid == false) {
+      if (valid_in(input, qualifications) == true) {
+        valid = true;
+        usr_in = input;
+      } else {
+        System.out.println("invalid input! Please try again.")
+        valid = false;
+      }
     }
   }
 
@@ -29,7 +31,7 @@ public class user_interaction {
     // between different scalable checks on proper input
     switch(qualifications) {
       case 0:
-        // case 0 is for 
+        // case 0 is for
       default:
         // default is basic checks for simple y/n statements
         if ((input.toLowerCase() == y) || (input.toLowerCase() == n)) {
