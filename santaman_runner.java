@@ -5,6 +5,6 @@ Developed by Techi-Joe!
 
 class santaman_runner {
   public static void main(String args[]) {
-    
+    input(100);
   }
 }

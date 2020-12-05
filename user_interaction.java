@@ -1,6 +1,6 @@
 /*
 This is a public class used for verifying
-user inputs and passing them to the appropiate classes.
+user inputs and passing them to the appropiate methods
 */
 
 public class user_interaction {
@@ -44,6 +44,4 @@ public class user_interaction {
     }
     return false; // returns false if not valid
   }
-
-
 }
