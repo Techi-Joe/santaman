@@ -5,6 +5,7 @@ Developed by Techi-Joe!
 
 public class santaman_runner {
   public static void main(String args[]) {
-    input(100);
+    userInteraction inter = new userInteraction(); // userInteraction class shortened to inter
+    inter.input(1);
   }
 }
