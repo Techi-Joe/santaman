@@ -38,7 +38,7 @@ public class userInteraction {
       case 0:
         // case 0 is
         break;
-      case 1:
+      default:
         // default is basic checks for simple y/n statements
         if ((in.toLowerCase() == "y") || (in.toLowerCase() == "n")) {
           return true;
