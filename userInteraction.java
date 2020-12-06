@@ -12,7 +12,7 @@ public class userInteraction {
   private String usr_in; // var for storing user text input
   private boolean valid = false; // stores if last input was validated
 
-  // input method is a void method that varifies an entered String
+  // input method is a void method that verifies an entered String
   // and saves it to usr_in. For qualifications, check valid_in()
   public void input(int qualifications) {
     Scanner input = new Scanner(System.in);
@@ -24,7 +24,7 @@ public class userInteraction {
       } else {
         System.out.println("invalid input! Please try again.");
         valid = false;
-        String user_input = input.nextLine();
+        user_in = input.nextLine();
       }
     }
   }
@@ -40,7 +40,7 @@ public class userInteraction {
         break;
       default:
         // default is basic checks for simple y/n statements
-        if ((in.toLowerCase() == "y") || (in.toLowerCase() == "n")) {
+        if ((in.toLowerCase().equals("y")) || (in.toLowerCase().equals("n"))) {
           return true;
         }
     }
