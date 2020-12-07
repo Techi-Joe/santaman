@@ -36,14 +36,20 @@ public class userInteraction {
     // between different scalable checks on proper input
     switch(qual) {
       case 0:
-        // case 0 is
+        // case 0
         break;
       default:
         // default is basic checks for simple y/n statements
         if ((in.toLowerCase().equals("y")) || (in.toLowerCase().equals("n"))) {
           return true;
         }
+        break;
     }
     return false; // returns false if not valid
+  }
+
+  // getUserInput() returns usr_in
+  public String getUserInput() {
+    return usr_in;
   }
 }
