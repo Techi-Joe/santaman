@@ -8,5 +8,7 @@ public class santaman_runner {
     // userInteraction class abbreviated to inter
     userInteraction inter = new userInteraction();
     inter.input(1);
+
+    
   }
 }

@@ -36,7 +36,8 @@ public class userInteraction {
     // between different scalable checks on proper input
     switch(qual) {
       case 0:
-        // case 0
+        // case 0 is for setName() method in players
+        
         break;
       default:
         // default is basic checks for simple y/n statements

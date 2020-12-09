@@ -16,6 +16,31 @@ public class players {
 
   // setName() method sets the player's name (duh)
   public void setName(String name_var) {
-    name_var
+    nm = name_var;
   }
+
+  // setTeam() method sets the player's team from String team_var
+  public void setTeam(String team_var) {
+    if (team_var.equals("elves")) {
+      tm = true;
+    } else {
+      tm = false;
+    }
+  }
+
+  // getName() method returns nm
+  public String getName() {
+    return nm;
+  }
+
+  // getTeam method returns tm
+  public boolean getTeam() {
+    return tm;
+  }
+
+  // getHeath() returns hp
+  public int getHeath() {
+    return hp;
+  }
+
 }
