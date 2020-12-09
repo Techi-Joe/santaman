@@ -33,7 +33,7 @@ public class players {
     return nm;
   }
 
-  // getTeam method returns tm
+  // getTeam() method returns tm
   public boolean getTeam() {
     return tm;
   }

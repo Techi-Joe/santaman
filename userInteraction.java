@@ -36,15 +36,21 @@ public class userInteraction {
     // between different scalable checks on proper input
     switch(qual) {
       case 0:
-        // case 0 is for setName() method in players
-        
-        break;
-      default:
-        // default is basic checks for simple y/n statements
+        // case 0 is basic checks for simple y/n statements
         if ((in.toLowerCase().equals("y")) || (in.toLowerCase().equals("n"))) {
           return true;
         }
         break;
+      case 1:
+        // case 1 converts String input to boolean output
+        if ((in.toLowerCase().equals("true")) || (in.toLowerCase().equals("false"))) {
+          return true;
+        }
+        break;
+      default:
+       // default always returns true
+       System.out.println("Warning: valid_in() is defaulting!");
+        return true;
     }
     return false; // returns false if not valid
   }

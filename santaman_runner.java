@@ -9,6 +9,6 @@ public class santaman_runner {
     userInteraction inter = new userInteraction();
     inter.input(1);
 
-    
+
   }
 }
