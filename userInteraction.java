@@ -17,8 +17,8 @@ public class userInteraction {
   public void input(int qualifications) {
     Scanner input = new Scanner(System.in);
     String user_in = input.nextLine();
-    while(valid == false) {
-      if (valid_in(user_in, qualifications) == true) {
+    while(!valid) {
+      if (valid_in(user_in, qualifications)) {
         valid = true;
         usr_in = user_in;
       } else {
@@ -42,10 +42,11 @@ public class userInteraction {
         }
         break;
       case 1:
-        // case 1 converts String input to boolean output
-        if ((in.toLowerCase().equals("true")) || (in.toLowerCase().equals("false"))) {
-          return true;
-        }
+        // case 1
+        
+        break;
+      case 2:
+        // case 2
         break;
       default:
        // default always returns true
