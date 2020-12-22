@@ -10,13 +10,13 @@ public class userInteraction {
   // define private vars at start
   // note: all private vars are abbreviated
   private String usr_in; // var for storing user text input
-  private boolean valid = false; // stores if last input was validated
 
   // input method is a void method that verifies an entered String
   // and saves it to usr_in. For qualifications, check valid_in()
   public void input(int qualifications) {
     Scanner input = new Scanner(System.in);
     String user_in = input.nextLine();
+    private boolean valid = false;
     while(!valid) {
       if (valid_in(user_in, qualifications)) {
         valid = true;
@@ -43,7 +43,7 @@ public class userInteraction {
         break;
       case 1:
         // case 1
-        
+
         break;
       case 2:
         // case 2
